@@ -1,8 +1,10 @@
 require 'spec_helper'
 describe 'Location' do
+  before do
+    @location = Location.create
+  end
   describe 'Relationships' do
     before do
-      @location = Location.create
       @route_1 = Route.create
       @location_name_1 = LocationName.create :location_id => @location.id
       @location_name_2 = LocationName.create :location_id => @location.id
@@ -20,5 +22,15 @@ describe 'Location' do
     it 'should have many routes' do
       @location.routes.should == [@route_1]
     end
+  end
+
+  it 'should have a latlong' do
+    @location.latlong = '123,-321'
+    @location.latlong.should == '123,-321'
+  end
+  
+  it 'should have a name' do
+    @location.name = 'Facultad'
+    @location.name.should == 'Facultad'
   end
 end
