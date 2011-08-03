@@ -57,6 +57,7 @@ class LocationsController < ApplicationController
   # PUT /locations/1
   # PUT /locations/1.xml
   def update
+    raise "Can't update yet!"
     @location = Location.find(params[:id])
 
     respond_to do |format|
@@ -73,6 +74,7 @@ class LocationsController < ApplicationController
   # DELETE /locations/1
   # DELETE /locations/1.xml
   def destroy
+    raise "Can't delete yet!"
     @location = Location.find(params[:id])
     @location.destroy
 

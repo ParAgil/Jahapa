@@ -84,8 +84,15 @@ describe LocationsController do
   end
 
   describe "PUT update" do
-
+    it 'should not be allowed, and just manual now' do
+      lambda { put :update, :id => "37", :location => {'these' => 'params'} }.should raise_error("Can't update yet!")
+    end
+    
     describe "with valid params" do
+      before do
+        pending 'not allowing update of locations yet'
+      end
+      
       it "updates the requested location" do
         Location.should_receive(:find).with("37") { mock_location }
         mock_location.should_receive(:update_attributes).with({'these' => 'params'})
@@ -106,6 +113,10 @@ describe LocationsController do
     end
 
     describe "with invalid params" do
+      before do
+        pending 'not allowing update of locations yet'
+      end
+
       it "assigns the location as @location" do
         Location.stub(:find) { mock_location(:update_attributes => false) }
         put :update, :id => "1"
@@ -122,17 +133,26 @@ describe LocationsController do
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested location" do
-      Location.should_receive(:find).with("37") { mock_location }
-      mock_location.should_receive(:destroy)
-      delete :destroy, :id => "37"
+    it 'should not be allowed, and just manual now' do
+      lambda { delete :destroy, :id => "37" }.should raise_error "Can't delete yet!"
     end
 
-    it "redirects to the locations list" do
-      Location.stub(:find) { mock_location }
-      delete :destroy, :id => "1"
-      response.should redirect_to(locations_url)
+    describe 'Deletion' do 
+      before do
+        pending 'not allowing deletion of locations yet'
+      end
+    
+      it "destroys the requested location" do
+        Location.should_receive(:find).with("37") { mock_location }
+        mock_location.should_receive(:destroy)
+        delete :destroy, :id => "37"
+      end
+
+      it "redirects to the locations list" do
+        Location.stub(:find) { mock_location }
+        delete :destroy, :id => "1"
+        response.should redirect_to(locations_url)
+      end
     end
   end
-
 end

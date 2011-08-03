@@ -1,4 +1,6 @@
 Jahapa::Application.routes.draw do
+  resources :routes
+
   resources :locations
 
   # The priority is based upon order of creation:
