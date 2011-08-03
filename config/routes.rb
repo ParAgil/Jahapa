@@ -1,4 +1,8 @@
 Jahapa::Application.routes.draw do
+  resources :stops
+
+  resources :location_names
+
   resources :routes
 
   resources :locations

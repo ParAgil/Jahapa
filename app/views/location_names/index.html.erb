@@ -1,0 +1,21 @@
+<h1>Listing location_names</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @location_names.each do |location_name| %>
+  <tr>
+    <td><%= link_to 'Show', location_name %></td>
+    <td><%= link_to 'Edit', edit_location_name_path(location_name) %></td>
+    <td><%= link_to 'Destroy', location_name, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Location name', new_location_name_path %>
