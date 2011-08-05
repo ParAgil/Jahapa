@@ -41,8 +41,15 @@ describe StopsController do
   end
 
   describe "POST create" do
+    it 'should not allow creation, and just manual now' do
+      lambda { post :create, :stop => {'these' => 'params'} }.should raise_error("Can't create yet")
+    end
 
     describe "with valid params" do
+      before do
+        pending 'not allowing stops creation yet'
+      end
+      
       it "assigns a newly created stop as @stop" do
         Stop.stub(:new).with({'these' => 'params'}) { mock_stop(:save => true) }
         post :create, :stop => {'these' => 'params'}
@@ -57,6 +64,10 @@ describe StopsController do
     end
 
     describe "with invalid params" do
+      before do
+        pending 'not allowing stops creation yet'
+      end
+      
       it "assigns a newly created but unsaved stop as @stop" do
         Stop.stub(:new).with({'these' => 'params'}) { mock_stop(:save => false) }
         post :create, :stop => {'these' => 'params'}
@@ -73,8 +84,14 @@ describe StopsController do
   end
 
   describe "PUT update" do
-
+    it 'should not allow update, and just manual now' do
+      lambda { put :update, :id => "37", :stop => {'these' => 'params'} }.should raise_error("Can't update yet!")
+    end
+    
     describe "with valid params" do
+      before do
+        pending 'not allowing update yet'
+      end
       it "updates the requested stop" do
         Stop.should_receive(:find).with("37") { mock_stop }
         mock_stop.should_receive(:update_attributes).with({'these' => 'params'})
@@ -95,6 +112,10 @@ describe StopsController do
     end
 
     describe "with invalid params" do
+      before do
+        pending 'not allowing update yet'
+      end
+    
       it "assigns the stop as @stop" do
         Stop.stub(:find) { mock_stop(:update_attributes => false) }
         put :update, :id => "1"
@@ -111,16 +132,26 @@ describe StopsController do
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested stop" do
-      Stop.should_receive(:find).with("37") { mock_stop }
-      mock_stop.should_receive(:destroy)
-      delete :destroy, :id => "37"
+    it 'should not allow deletion, and just manual now' do
+      lambda { delete :destroy, :id => "37" }.should raise_error "Can't delete yet!"
     end
+    
+    describe 'Deletion' do
+      before do
+        pending 'not allowing stops deletion yet'
+      end
+      
+      it "destroys the requested stop" do
+        Stop.should_receive(:find).with("37") { mock_stop }
+        mock_stop.should_receive(:destroy)
+        delete :destroy, :id => "37"
+      end
 
-    it "redirects to the stops list" do
-      Stop.stub(:find) { mock_stop }
-      delete :destroy, :id => "1"
-      response.should redirect_to(stops_url)
+      it "redirects to the stops list" do
+        Stop.stub(:find) { mock_stop }
+        delete :destroy, :id => "1"
+        response.should redirect_to(stops_url)
+      end
     end
   end
 

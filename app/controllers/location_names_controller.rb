@@ -40,6 +40,7 @@ class LocationNamesController < ApplicationController
   # POST /location_names
   # POST /location_names.xml
   def create
+    raise "Can't create yet!"
     @location_name = LocationName.new(params[:location_name])
 
     respond_to do |format|
@@ -56,6 +57,7 @@ class LocationNamesController < ApplicationController
   # PUT /location_names/1
   # PUT /location_names/1.xml
   def update
+    raise "Can't update yet!"
     @location_name = LocationName.find(params[:id])
 
     respond_to do |format|
@@ -72,6 +74,7 @@ class LocationNamesController < ApplicationController
   # DELETE /location_names/1
   # DELETE /location_names/1.xml
   def destroy
+    raise "Can't delete yet!"
     @location_name = LocationName.find(params[:id])
     @location_name.destroy
 

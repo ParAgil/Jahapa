@@ -40,6 +40,7 @@ class StopsController < ApplicationController
   # POST /stops
   # POST /stops.xml
   def create
+    raise "Can't create yet"
     @stop = Stop.new(params[:stop])
 
     respond_to do |format|
@@ -56,6 +57,7 @@ class StopsController < ApplicationController
   # PUT /stops/1
   # PUT /stops/1.xml
   def update
+    raise "Can't update yet!"
     @stop = Stop.find(params[:id])
 
     respond_to do |format|
@@ -72,6 +74,7 @@ class StopsController < ApplicationController
   # DELETE /stops/1
   # DELETE /stops/1.xml
   def destroy
+    raise "Can't delete yet!"
     @stop = Stop.find(params[:id])
     @stop.destroy
 

@@ -41,8 +41,14 @@ describe LocationNamesController do
   end
 
   describe "POST create" do
-
+    it 'should not allow creation, and just manual now' do
+      lambda { post :create, :location_name => {'these' => 'params'} }.should raise_error("Can't create yet!")
+    end
+    
     describe "with valid params" do
+      before do
+        pending 'not allowing location_names creation yet'
+      end
       it "assigns a newly created location_name as @location_name" do
         LocationName.stub(:new).with({'these' => 'params'}) { mock_location_name(:save => true) }
         post :create, :location_name => {'these' => 'params'}
@@ -57,6 +63,10 @@ describe LocationNamesController do
     end
 
     describe "with invalid params" do
+      before do
+        pending 'not allowing location_names creation yet'
+      end
+      
       it "assigns a newly created but unsaved location_name as @location_name" do
         LocationName.stub(:new).with({'these' => 'params'}) { mock_location_name(:save => false) }
         post :create, :location_name => {'these' => 'params'}
@@ -73,8 +83,15 @@ describe LocationNamesController do
   end
 
   describe "PUT update" do
-
+    it 'should not allow update, and just manual now' do
+      lambda { put :update, :id => "37", :location_name => {'these' => 'params'} }.should raise_error("Can't update yet!")
+    end
+    
     describe "with valid params" do
+      before do
+        pending 'not allowing location_names update yet'
+      end
+      
       it "updates the requested location_name" do
         LocationName.should_receive(:find).with("37") { mock_location_name }
         mock_location_name.should_receive(:update_attributes).with({'these' => 'params'})
@@ -95,6 +112,10 @@ describe LocationNamesController do
     end
 
     describe "with invalid params" do
+      before do
+        pending 'not allowing location_names update yet'
+      end
+
       it "assigns the location_name as @location_name" do
         LocationName.stub(:find) { mock_location_name(:update_attributes => false) }
         put :update, :id => "1"
@@ -111,16 +132,26 @@ describe LocationNamesController do
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested location_name" do
-      LocationName.should_receive(:find).with("37") { mock_location_name }
-      mock_location_name.should_receive(:destroy)
-      delete :destroy, :id => "37"
+    it 'should not allow deletion, and just manual now' do
+      lambda { delete :destroy, :id => "37" }.should raise_error("Can't delete yet!")
     end
+    
+    describe 'Deletion' do
+      before do
+        pending 'not allowing location_names deletion yet'
+      end
+      
+      it "destroys the requested location_name" do
+        LocationName.should_receive(:find).with("37") { mock_location_name }
+        mock_location_name.should_receive(:destroy)
+        delete :destroy, :id => "37"
+      end
 
-    it "redirects to the location_names list" do
-      LocationName.stub(:find) { mock_location_name }
-      delete :destroy, :id => "1"
-      response.should redirect_to(location_names_url)
+      it "redirects to the location_names list" do
+        LocationName.stub(:find) { mock_location_name }
+        delete :destroy, :id => "1"
+        response.should redirect_to(location_names_url)
+      end
     end
   end
 
