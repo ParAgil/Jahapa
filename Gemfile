@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc4'
+gem 'rails', '3.1.0.rc5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,12 +29,10 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
-
-group :assets do
-  gem 'sass-rails', "~> 3.1.0.rc"
-  gem 'coffee-rails', "~> 3.1.0.rc"
-  gem 'uglifier'
-end
+gem 'sprockets'
+gem 'sass-rails', "~> 3.1.0.rc"
+gem 'coffee-rails', "~> 3.1.0.rc"
+gem 'uglifier'
 
 group :test, :development do
   gem "rspec-rails"

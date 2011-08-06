@@ -42,7 +42,7 @@ describe RoutesController do
 
   describe "POST create" do
     it 'should not be allowed, and just be manual now' do
-      lambda{ post :create, :route => {'these' => 'params'} }.should raise_error("can't post yet!")
+      lambda{ post :create, :route => {'these' => 'params'} }.should raise_error("Can't post yet!")
     end
     
     describe "with valid params" do

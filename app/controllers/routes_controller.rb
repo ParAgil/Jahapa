@@ -40,7 +40,7 @@ class RoutesController < ApplicationController
   # POST /routes
   # POST /routes.xml
   def create
-    raise "can't post yet!"
+    raise "Can't post yet!"
     @route = Route.new(params[:route])
 
     respond_to do |format|

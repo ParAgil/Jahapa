@@ -10,7 +10,7 @@
 <% @routes.each do |route| %>
   <tr>
     <td><%= link_to 'Show', route %></td>
-    <td><%= link_to 'Edit', edit_route_path(route) %></td>
+    <td><%= link_to 'Edit', edit_stop_path(route) %></td>
     <td><%= link_to 'Destroy', route, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
