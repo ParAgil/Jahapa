@@ -6,7 +6,7 @@ Jahapa::Application.routes.draw do
   resources :routes
 
   resources :locations
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,7 +58,7 @@ Jahapa::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
   
-  root :to => "routes#index"
+  root :to => "home#index"
   
   # See how all your routes lay out with "rake routes"
 

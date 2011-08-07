@@ -7,5 +7,14 @@
 */
 
 body {
-  font-color :#543;
+  background-color :#aaf;
+  margin-left :25em;
+}
+
+h1 {
+  margin-left :2.5em;
+}
+
+div.image {
+  margin-left :5em;
 }

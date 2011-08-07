@@ -1,8 +1,9 @@
 class CreateLocations < ActiveRecord::Migration
   def self.up
     create_table :locations do |t|
-      t.string :latlong
-      t.string :name
+      t.integer :lat
+      t.integer :long
+      t.integer :default_name_id
 
       t.timestamps
     end

@@ -14,14 +14,15 @@ ActiveRecord::Schema.define(:version => 20110728230030) do
 
   create_table "location_names", :force => true do |t|
     t.string   "name"
-    t.string   "location_id"
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "locations", :force => true do |t|
-    t.string   "latlong"
-    t.string   "name"
+    t.integer  "lat"
+    t.integer  "long"
+    t.integer  "default_name_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
