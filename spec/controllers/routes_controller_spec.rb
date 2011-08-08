@@ -8,8 +8,14 @@ describe RoutesController do
   end
 
   describe "GET index" do
-    it "assigns all routes as @routes" do
+    it " finds particualr raoutes and assigns them as @routes" do
       Route.stub(:from_locations) { [mock_route] }
+      get :index, {:start_location => 'foo', :end_location => 'bar'} 
+      assigns(:routes).should eq([mock_route])
+    end
+    
+    it "assigns all routes if it doesn't have the right params" do
+      Route.stub(:all) { [mock_route] }
       get :index
       assigns(:routes).should eq([mock_route])
     end
