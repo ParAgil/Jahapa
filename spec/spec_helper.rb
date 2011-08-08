@@ -24,4 +24,10 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+  
+  def hr message=nil
+    str = "<hr>"
+    str << "#{CGI.escapeHTML(message.inspect)}<hr>" if message
+    puts str
+  end
 end

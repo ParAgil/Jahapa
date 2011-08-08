@@ -7,14 +7,25 @@
 */
 
 body {
-  background-color :#aaf;
-  margin-left :25em;
+  background-color :#ddd;
+  margin-left :2em;
 }
 
 h1 {
   margin-left :2.5em;
 }
 
+div.box {
+  background-color :#fff;
+  margin-left :10em;
+  margin-right :20em;
+  padding-bottom :25em;
+  padding-left: 5em;
+  padding-top: 2em;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
 div.image {
-  margin-left :5em;
+  margin-left :10em;
 }

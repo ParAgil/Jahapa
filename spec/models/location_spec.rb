@@ -15,7 +15,7 @@ describe 'Location' do
     end
   
     it 'should have many location_names' do
-      @location.location_names.should == [@location_name_1, @location_name_2]
+      @location.names.should == [@location_name_1, @location_name_2]
     end
   
     it 'should have many stops' do
@@ -91,7 +91,24 @@ describe 'Location' do
     it 'should not freak out if there are no location names' do
       expect { @location.name }.should_not raise_error
     end
-  end  
+  end
+  
+  describe '.from_name' do
+    before :all do
+      LocationName.destroy_all
+      Location.destroy_all
+    end
+    
+    it 'should find the right one' do
+      location = Location.create
+      LocationName.create(:name => 'foo', :location => location)
+      Location.from_name('foo').should == location
+    end
+    
+    it 'returns nil if one is not found' do
+      Location.from_name('bar').should == nil
+    end
+  end
 end
 
 
