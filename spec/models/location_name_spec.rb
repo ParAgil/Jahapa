@@ -4,7 +4,7 @@ require 'spec_helper'
 describe 'Location Name' do
   before do
     @location = Location.create
-    @name = LocationName.new :location_id => @location.id
+    @name = LocationName.create :location_id => @location.id, :name => 'Foo'
   end
   
   describe 'Relationships' do
@@ -71,6 +71,21 @@ describe 'Location Name' do
         @name.name = ' cap   foo'
         @name.name.should == "Capitan Foo"
       end
+    end
+  end
+  
+  describe '.from_name' do
+    it 'will normalize the name' do
+      LocationName.should_receive(:normalize).and_return('Foo')
+      LocationName.from_name('foo')
+    end
+  
+    it 'searches for matches on the name' do
+      LocationName.from_name('foo').should == @name
+    end
+    
+    it 'returns nil if it does not find anything' do
+      LocationName.from_name('bar').should == nil
     end
   end
 end

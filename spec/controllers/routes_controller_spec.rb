@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe RoutesController do
-
   def mock_route(stubs={})
     (@mock_route ||= mock_model(Route).as_null_object).tap do |route|
       route.stub(stubs) unless stubs.empty?
@@ -10,7 +9,7 @@ describe RoutesController do
 
   describe "GET index" do
     it "assigns all routes as @routes" do
-      Route.stub(:all) { [mock_route] }
+      Route.stub(:from_locations) { [mock_route] }
       get :index
       assigns(:routes).should eq([mock_route])
     end

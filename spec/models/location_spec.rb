@@ -91,7 +91,7 @@ describe 'Location' do
     it 'should not freak out if there are no location names' do
       expect { @location.name }.should_not raise_error
     end
-  end
+  end  
 end
 
 

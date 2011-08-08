@@ -14,4 +14,9 @@ class LocationName < ActiveRecord::Base
     string = string.strip.gsub(/\s+/, " ")
     string.titleize
   end
+  
+  def self.from_name( string )
+    find_by_name( normalize( string ) )
+  end
+  
 end

@@ -3,6 +3,7 @@ describe 'Route' do
   before do
     @route = Route.create
   end
+  
   describe 'Relationships' do
     before do
       @location_1 = Location.create
@@ -20,8 +21,16 @@ describe 'Route' do
     end
   end
   
-  it 'should have a name' do
-    @route.name = 'Linea 49'
-    @route.name.should == 'Linea 49'
+  describe 'basic attributes' do
+    it 'should have a name' do
+      @route.name = 'Linea 49'
+      @route.name.should == 'Linea 49'
+    end
+  end
+  
+  describe '.from_locations' do
+    it 'find the location names from the params'
+    it 'calls Location.from_name to get each name'
+    it 'returns all routes that have both locations'
   end
 end
