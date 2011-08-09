@@ -1,11 +1,11 @@
-<%= form_tag({:controller => "routes", :action => "index"}, :method => "get") do %>
-  <div>
+<%= form_tag({:controller => "home", :action => "index"}, :method => "get") do %>
+  <div class='input'>
     <%= label_tag(:start_location, "Subir cerca de:") %>
     <%= text_field_tag(:start_location) %>
   </div>
-  <div>
+  <div class='input'>
     <%= label_tag(:end_location, "Bajar cerca de:") %>
     <%= text_field_tag(:end_location) %>
   </div>
-  <%= submit_tag("Buscar") %>
+  <%= submit_tag("Buscar", :class => 'button') %>
 <% end %>

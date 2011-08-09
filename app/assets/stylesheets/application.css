@@ -7,25 +7,94 @@
 */
 
 body {
-  background-color :#ddd;
-  margin-left :2em;
+  font-family: Verdana;
+  background-color :#AADD99;
+  margin :0;
 }
 
-h1 {
-  margin-left :2.5em;
+h5 {
+  margin :0;
 }
 
-div.box {
+span.header {
+  font-size :20px;
+  margin: 8px;
+}
+
+span.footer {
+  font-size :14px;
+  margin: 8px;
+}
+
+div.content{
   background-color :#fff;
-  margin-left :10em;
-  margin-right :20em;
-  padding-bottom :25em;
-  padding-left: 5em;
-  padding-top: 2em;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  border-top: solid 4px #fff;
+  border-left: solid 4px #fff;
+  border-right: solid 4px #115511;
+  border-bottom: solid 4px #115511;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  margin: 2% 15%;
+  margin-top: 4px;
+  padding: 5px 30px;
+  padding-bottom: 40px;
+  height: 480px;
 }
 
 div.image {
-  margin-left :10em;
+  margin: 5px;
+  margin-left: 7px;
+  float: left;
+}
+
+div.image img {
+  width: 220px;
+}
+
+ul.list {
+  width: 150px;
+  border-top: solid 2px #fff;
+  border-left: solid 2px #fff;
+  border-right: solid 3px #115511;
+  border-bottom: solid 3px #115511;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 45px;
+  background-color :#AADD99;
+}
+
+div.header {
+  padding: 0.5%;
+  padding-left: 2%;
+  background-color: #115511;
+  color: #fff;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0.5%;
+  padding-left: 2%;
+  background-color: #115511;
+  color: #fff;
+}
+
+div.footer h5 {
+  margin-left: 80%;
+}
+
+div.form_and_image {
+  margin-top: 5px;
+  margin-right: 20px;
+  width: 25%;
+  float: left;
+}
+
+div.list {
+  margin-left: 10px;
+  width: 30%;
+  float: left;
 }

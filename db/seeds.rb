@@ -16,7 +16,7 @@ def make_location(hash)
   end
 end
 
-make_location(:lat => -25.295152, :long => -57.581073, :names => 'shopping mariscal lopez, mariscal lopez shopping')
+make_location(:lat => -25.295152, :long => -57.581073, :names => 'mariscal lopez, shopping mariscal lopez, mariscal lopez shopping')
 
 make_location(:lat => -25.338923, :long => -57.584947, :names => '4 mojones, cuatro mojones') 
 
@@ -28,7 +28,7 @@ make_location(:lat => -25.29402, :long => -57.580427, :names => 'shopping villa 
 
 make_location(:lat => -25.292652, :long => -57.582632, :names => 'ministerio de industria y comercio, mic, ministerio de industria, ministerio de comercio') 
 
-make_location(:lat => -25.29021, :long => -57.589721, :names => 'iglesia de la recoleta, iglesia la recoleta, cementerio de la recoleta, cementerio la recoleta') 
+make_location(:lat => -25.29021, :long => -57.589721, :names => 'iglesia de la recoleta, iglesia la recoleta, cementerio de la recoleta, cementerio la recoleta, la recoleta') 
 
 make_location(:lat => -25.290952, :long => -57.593831, :names => 'embajada del japon, embajada de japon, embajada japonesa, embajada japon') 
 
@@ -53,9 +53,7 @@ end
 
 make_route('51', 'shopping del sol')
 
-make_route('15', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon,  shopping britanico,  manzana t')
-
-
+make_route('15', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico,  manzana t')
 
 
 

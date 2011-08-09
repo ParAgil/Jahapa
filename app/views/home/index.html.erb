@@ -1,7 +1,9 @@
-<div class='box'>
+<div class='form_and_image'>
   <div class='image'>
-  <%= image_tag('logo.jpg') %>
+    <%= image_tag('logo.png') %>
   </div>
-  <p>Buscador de buses del area de Gran Asuncion</p>
-   <%= render 'search_form' %>
+  <%= render 'search_form' %>
+</div>
+<div class='list'>
+  <%= render :template => 'routes/index' %>
 </div>

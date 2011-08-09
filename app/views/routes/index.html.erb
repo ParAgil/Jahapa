@@ -1,7 +1,7 @@
-<h1>Listing routes</h1>
+<h4>Buses que transitan entre ambos puntos:</h4>
 
-<ul>
+<ul class='list'>
   <% @routes.each do |route| %>
-    <li><%= route.name %></li>
+    <li>Línea <%= route.name %></li>
   <% end %>
 </ul>
