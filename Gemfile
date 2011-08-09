@@ -33,6 +33,7 @@ gem 'sprockets'
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-rails', "~> 3.1.0.rc"
 gem 'uglifier'
+gem 'execjs'
 
 group :test, :development do
   gem "rspec-rails"

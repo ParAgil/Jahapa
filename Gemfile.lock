@@ -131,6 +131,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.0.rc)
+  execjs
   jquery-rails
   open_gem
   rails (= 3.1.0.rc5)
