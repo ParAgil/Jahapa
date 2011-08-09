@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(:version => 20110728230030) do
   end
 
   create_table "locations", :force => true do |t|
-    t.integer  "lat"
-    t.integer  "long"
+    t.float    "lat"
+    t.float    "long"
     t.integer  "default_name_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20110728230030) do
   end
 
   create_table "stops", :force => true do |t|
-    t.string   "route_id"
-    t.string   "location_id"
+    t.integer  "route_id"
+    t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

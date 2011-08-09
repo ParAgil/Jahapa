@@ -1,8 +1,8 @@
 class CreateStops < ActiveRecord::Migration
   def self.up
     create_table :stops do |t|
-      t.string :route_id
-      t.string :location_id
+      t.integer :route_id
+      t.integer :location_id
 
       t.timestamps
     end
