@@ -10,3 +10,9 @@
 //= require jquery_ujs
 //= require_tree .
 
+function ImageSwap(id, URL) 
+{
+  var img;
+  img = document.getElementById(id);
+  return img.src = URL;
+};

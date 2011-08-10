@@ -7,5 +7,12 @@
     <%= label_tag(:end_location, "Bajar cerca de:") %>
     <%= text_field_tag(:end_location) %>
   </div>
-  <%= image_submit_tag('hex1.png', :class => 'button') %>
+  <%= image_submit_tag('hex1.png', 
+  :class => 'button', 
+  :id => 'buscar', 
+  :onmouseover => "ImageSwap('buscar', '/assets/hex2.png')",
+  :onmouseout => "ImageSwap('buscar', '/assets/hex1.png')",
+  :onmousedown => "ImageSwap('buscar', '/assets/hex3.png')"
+  ) %>
 <% end %>
+
