@@ -93,6 +93,8 @@ describe 'Route' do
       Route.from_locations(:start_location => 'bar', :end_location => 'zardoz').should == []
     end
     
-    it 'retuns all routes if no locations are passed as params'
+    it 'retuns all routes if no locations are passed as params' do
+      Route.from_locations({}).should == Route.all
+    end
   end
 end

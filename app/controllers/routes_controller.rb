@@ -2,7 +2,7 @@ class RoutesController < ApplicationController
   # GET /routes
   # GET /routes.xml
   def index
-    @routes = params[:start_location] && params[:end_location] ? Route.from_locations( params ) : Route.all
+    @routes = Route.from_locations( params )
 
     respond_to do |format|
       format.html # index.html.erb
