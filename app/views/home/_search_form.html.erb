@@ -1,10 +1,12 @@
 <%= form_tag({:controller => "home", :action => "index"}, :method => "get") do %>
   <div class='input'>
     <%= label_tag(:start_location, "Subir cerca de:") %>
+    <p class='tip'>ej: shopping mcal lopez</p>
     <%= text_field_tag(:start_location) %>
   </div>
   <div class='input'>
     <%= label_tag(:end_location, "Bajar cerca de:") %>
+    <p class='tip'>ej: mercado de abasto</p>
     <%= text_field_tag(:end_location) %>
   </div>
   <%= image_submit_tag('hex1.png', 

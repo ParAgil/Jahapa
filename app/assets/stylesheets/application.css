@@ -17,11 +17,17 @@ body {
 }
 
 h5 {
-  margin :0;
+  margin: 0;
 }
 
 h4 {
   color: #000080;
+}
+
+p.tip {
+  font-size: 9px;
+  margin: 0;
+  margin-bottom: 0.5px;
 }
 
 span.header {
@@ -44,7 +50,7 @@ div.panel{
   margin-top: 6px;
   padding: 5px 30px;
   padding-bottom: 40px;
-  height: 500px;
+  height: 515px;
   -moz-box-shadow: 10px 10px 5px #888;
   -webkit-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888;

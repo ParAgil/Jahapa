@@ -7,10 +7,11 @@
   </div>
   
   <div class='list_and_map'>
-    <div class='list'>
-      <%= render :template => 'routes/index' %>
-    </div>
-    
+    <% if @routes.size > 0 %>
+      <div class='list'>
+        <%= render :template => 'routes/index' %>
+      </div>
+    <% end %>
     <div class='map'>
     </div>
   </div>

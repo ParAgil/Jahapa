@@ -1,5 +1,9 @@
 class HomeController < ApplicationController
   def index
-    @routes = Route.from_locations( params )
+    if params[:start_location] && params[:end_location] 
+      @routes = Route.from_locations( params )
+    else
+      @routes = []
+    end
   end
 end
