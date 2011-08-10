@@ -1,7 +1,9 @@
-<h4>Buses que transitan entre ambos puntos:</h4>
+<div class='buses_info'>
+  <h4>Buses que transitan entre ambos puntos:</h4>
 
-<ul class='list'>
-  <% @routes.each do |route| %>
-    <li>Línea <%= route.name %></li>
-  <% end %>
-</ul>
+  <ul class='list'>
+    <% @routes.each do |route| %>
+      <li>Línea <%= route.name %></li>
+    <% end %>
+  </ul>
+</div>

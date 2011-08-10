@@ -5,11 +5,15 @@
  *= require_self
  *= require_tree . 
 */
+html {
+  width: 100%;
+  min-width: 1240px;
+}
 
 body {
   background-image :url('fondo.png');
   font-family: Verdana;
-  margin :0;
+  margin: 0;
 }
 
 h5 {
@@ -92,13 +96,30 @@ div.footer h5 {
 
 div.form_and_image {
   margin-top: 5px;
-  margin-right: 20px;
+  margin-right: 15px;
   width: 25%;
+  min-width: 25%;
   float: left;
+}
+
+div.list_and_map {
+  margin-left: 10px;
+  width: 72%;
+  float: right;
 }
 
 div.list {
   margin-left: 10px;
-  width: 30%;
+  width: 38%;
   float: left;
+}
+
+div.map {
+  margin-left: 10px;
+  width: 60%;
+  float: right;
+}
+
+div.buses_info {
+  padding-left: 10px;
 }
