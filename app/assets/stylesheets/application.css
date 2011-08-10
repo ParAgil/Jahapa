@@ -32,19 +32,18 @@ span.footer {
   margin: 8px;
 }
 
-div.content{
+div.panel{
   background-color :#fff;
-  border-top: solid 4px #fff;
-  border-left: solid 4px #fff;
-  border-right: solid 4px #888;
-  border-bottom: solid 4px #888;
   -moz-border-radius: 30px;
   border-radius: 30px;
   margin: 2% 15%;
-  margin-top: 4px;
+  margin-top: 6px;
   padding: 5px 30px;
   padding-bottom: 40px;
   height: 500px;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
 }
 
 div.image {
@@ -59,32 +58,31 @@ div.image img {
 
 ul.list {
   width: 150px;
-  border-top: solid 2px #fff;
-  border-left: solid 2px #fff;
-  border-right: solid 3px #888;
-  border-bottom: solid 3px #888;
   -moz-border-radius: 30px;
   border-radius: 30px;
   padding: 15px;
   padding-left: 45px;
   background-color :#b0c4de;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888; 
 }
 
 div.header {
+  background-image :url('header.png');
   padding: 0.5%;
   padding-left: 2%;
-  background-color: #b0c4de;
   color: #fff;
 }
 
 div.footer {
+  background-image :url('footer.png');
   position: fixed;
   bottom: 0px;
   right: 0px;
   left: 0px;
   padding: 0.5%;
   padding-left: 2%;
-  background-color: #b0c4de;
   color: #fff;
 }
 

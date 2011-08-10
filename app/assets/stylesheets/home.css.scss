@@ -19,12 +19,11 @@ input.button {
 
 form {
   width: 200px;
-  border-top: solid 2px #fff;
-  border-left: solid 2px #fff;
-  border-right: solid 3px #888;
-  border-bottom: solid 3px #888;
   -moz-border-radius: 30px;
   border-radius: 30px;
   padding: 15px;
   background-color :#b0c4de;
+  -moz-box-shadow: 10px 10px 5px #888;
+  -webkit-box-shadow: 10px 10px 5px #888;
+  box-shadow: 10px 10px 5px #888;
 }

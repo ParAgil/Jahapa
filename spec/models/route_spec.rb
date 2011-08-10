@@ -92,5 +92,7 @@ describe 'Route' do
     it 'returns an empty set if no intersections are found' do
       Route.from_locations(:start_location => 'bar', :end_location => 'zardoz').should == []
     end
+    
+    it 'retuns all routes if no locations are passed as params'
   end
 end
