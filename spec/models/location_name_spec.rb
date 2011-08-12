@@ -66,6 +66,11 @@ describe 'Location Name' do
         @name.name = 'cap'
         @name.name.should == 'Capitan'
       end
+      
+      it 'transforms the abbreviation for fernando' do
+        @name.name = 'fdo'
+        @name.name.should == 'Fernando'
+      end
 
       it 'should remove extra spaces' do
         @name.name = ' cap   foo'
