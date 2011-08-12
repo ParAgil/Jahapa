@@ -15,6 +15,11 @@
      $.get("/routes", {
        start_location: $('form #start_location').val(), 
        end_location: $('form #end_location').val()
-       });   
+       }, 
+       function(data) {
+        var info;
+        info = $(data, 'div.buses_info');
+        $('div.list').html(info)
+        });   
     });
  })
