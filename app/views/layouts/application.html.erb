@@ -3,12 +3,13 @@
 <head>
   <title>Jahapa</title>
   <%= stylesheet_link_tag :application %>
-  <%= javascript_include_tag :application %>
+  <%= javascript_include_tag "jquery.js", "rails.js", "application.js"%>
   <%= csrf_meta_tag %>
 </head>
 <body>
   <div class='header'> 
-      <h5> <span class='header'>JAHAPA</span> Buscador de buses del area de Gran Asunción </h5> 
+      <%= image_tag('logo_cabecera.PNG') %> 
+      <h5> Buscador de buses del area de Gran Asunción </h5> 
   </div>
   <div class='content'>
     <%= yield %>

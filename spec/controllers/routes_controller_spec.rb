@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe RoutesController do
+  render_views
   def mock_route(stubs={})
     (@mock_route ||= mock_model(Route).as_null_object).tap do |route|
       route.stub(stubs) unless stubs.empty?
@@ -18,6 +19,18 @@ describe RoutesController do
       Route.stub(:all) { [mock_route] }
       get :index
       assigns(:routes).should eq([mock_route])
+    end
+    
+    it 'doesnt return the full layout when format is xhr' do
+      Route.stub(:all) { [mock_route] }
+      xhr :get, :index
+      response.body.should_not include('header')
+    end
+    
+    it 'returns the full layout when format is not xhr' do
+      Route.stub(:all) { [mock_route] }
+      get :index, {}
+      response.body.should include('header')
     end
   end
 

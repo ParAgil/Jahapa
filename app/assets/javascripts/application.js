@@ -6,13 +6,15 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
-//= require jquery
-//= require jquery_ujs
-//= require_tree .
 
-function ImageSwap(id, URL) 
-{
-  var img;
-  img = document.getElementById(id);
-  return img.src = URL;
-};
+
+ $(document).ready(function() {
+   $(".buscar").click(function(e){
+     e.preventDefault();
+     $('.panel').width(935)
+     $.get("/routes", {
+       start_location: $('form #start_location').val(), 
+       end_location: $('form #end_location').val()
+       });   
+    });
+ })

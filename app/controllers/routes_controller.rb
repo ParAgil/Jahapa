@@ -5,7 +5,7 @@ class RoutesController < ApplicationController
     @routes = Route.from_locations( params )
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render 'routes/index', :layout => !request.xhr?}
       format.xml  { render :xml => @routes }
     end
   end

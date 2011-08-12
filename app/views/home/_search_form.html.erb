@@ -1,4 +1,4 @@
-<%= form_tag({:controller => "home", :action => "index"}, :method => "get") do %>
+<%= form_tag({:controller => "routes", :action => "index"}, :method => "get") do %>
   <div class='input'>
     <%= label_tag(:start_location, "Subir cerca de:") %>
     <p class='tip'>ej: shopping mcal lopez</p>
@@ -7,14 +7,8 @@
   <div class='input'>
     <%= label_tag(:end_location, "Bajar cerca de:") %>
     <p class='tip'>ej: mercado de abasto</p>
-    <%= text_field_tag(:end_location) %>
+      <%= text_field_tag(:end_location) %>
   </div>
-  <%= image_submit_tag('hex1.png', 
-  :class => 'button', 
-  :id => 'buscar', 
-  :onmouseover => "ImageSwap('buscar', '/assets/hex2.png')",
-  :onmouseout => "ImageSwap('buscar', '/assets/hex1.png')",
-  :onmousedown => "ImageSwap('buscar', '/assets/hex3.png')"
-  ) %>
+  <%= submit_tag('Buscar', :class => 'button buscar') %>
 <% end %>
 
