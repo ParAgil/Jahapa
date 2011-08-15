@@ -8,6 +8,7 @@
 //
 
 function initialize() {
+  $('div.list_and_map').height(545)
   var latlng = new google.maps.LatLng(-25.295152, -57.581073);
   var myOptions = {
     zoom: 16,
