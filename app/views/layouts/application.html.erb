@@ -3,12 +3,12 @@
 <head>
   <title>Jahapa</title>
   <%= stylesheet_link_tag :application %>
-  <%= javascript_include_tag "jquery.js", "rails.js", "application.js"%>
+  <%= javascript_include_tag "jquery.js", "rails.js", "application.js", "http://maps.googleapis.com/maps/api/js?sensor=false"%>
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <div class='header'> 
-      <%= image_tag('logo_cabecera.PNG') %> 
+  <div class='header'>
+      <%= image_tag('logo_cabecera.PNG') %>
       <h5> Buscador de buses del area de Gran Asunción </h5> 
   </div>
   <div class='content'>

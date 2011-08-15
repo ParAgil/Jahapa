@@ -6,7 +6,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-# ------------------ LOCATIONS ------------------------------------ #
+# ------------------ LOCATIONS -----------------------------------------------------#
 def make_location(hash)
   location = Location.create(:lat => hash[:lat], :long => hash[:long])
   names = hash[:names]
@@ -40,7 +40,31 @@ make_location(:lat => -25.295053, :long => -57.578375, :names => 'manzana t')
 
 make_location(:lat => -25.283215, :long => -57.566922, :names => 'shopping del sol') 
 
-# ------------------------------- ROUTES -------------------------------------------#
+make_location(:lat => -25.316553, :long => -57.571170, :names => 'multiplaza,	shopping multiplaza')
+
+make_location(:lat => -25.333592, :long => -57.520326, :names => 'una,	universidad nacional de asuncion,	facultad')
+
+make_location(:lat => -25.362796, :long => -57.563299,	:names => 'coca cola')
+
+make_location(:lat => -25.326436, :long => -57.595988, :names => 'terminal,	terminal de asuncion,	terminal asuncion,	terminal de omnibus')
+
+make_location(:lat => -25.323507, :long => -57.594486, :names => 'ysaty,	colegio ysaty')
+
+make_location(:lat => -25.300613, :long => -57.579964, :names => 'colegio bautista,	bautista,	hospital bautista')
+
+make_location(:lat => -25.299827, :long => -57.580114, :names => 'embajada surcorea, embajada corea del sur, embajada surcoreana')
+
+make_location(:lat => -25.327856, :long => -57.547481, :names => 'real fernando,	supermercado real fernando,	super real fernando')
+
+make_location(:lat => -25.347197, :long => -57.575687, :names => 'real acceso sur,	supermercado real acceso sur,	super real acceso sur,	real sur')
+
+make_location(:lat => -25.302029, :long => -57.565793, :names => 'identificaciones')
+
+make_location(:lat => -25.294832, :long => -57.577228, :names => 'plaza de las americas, plaza americas')
+
+make_location(:lat => -25.292533, :long => -57.601571, :names => 'muruvicha roga')
+
+#-------------------------------- ROUTES -------------------------------------------#
 
 def make_route( name, locations )
   locations = locations.is_a?(Array) ? locations : locations.split(',')

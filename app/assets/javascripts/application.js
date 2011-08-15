@@ -7,19 +7,31 @@
 // the compiled file.
 //
 
+function initialize() {
+  var latlng = new google.maps.LatLng(-25.295152, -57.581073);
+  var myOptions = {
+    zoom: 16,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
 
- $(document).ready(function() {
-   $(".buscar").click(function(e){
-     e.preventDefault();
-     $('.panel').width(935)
-     $.get("/routes", {
-       start_location: $('form #start_location').val(), 
-       end_location: $('form #end_location').val()
-       }, 
-       function(data) {
-        var info;
-        info = $(data, 'div.buses_info');
-        $('div.list').html(info)
-        });   
-    });
- })
+  var map = new google.maps.Map(document.getElementById("map"),
+      myOptions);
+}
+
+
+$(document).ready(function() {
+ $(".buscar").click(function(e){
+   e.preventDefault();
+   $('.panel').width(935)
+   $.get("/routes", {
+     start_location: $('form #start_location').val(), 
+     end_location: $('form #end_location').val()
+     }, function(data) {
+      var info;
+      info = $(data, 'div.buses_info');
+      $('div.list').html(info)
+      });
+   initialize()
+  });
+})
