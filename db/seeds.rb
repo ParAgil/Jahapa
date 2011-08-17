@@ -1,3 +1,4 @@
+# coding: UTF-8
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -28,7 +29,7 @@ make_location(:lat => -25.29402, :long => -57.580427, :names => 'shopping villa 
 
 make_location(:lat => -25.292652, :long => -57.582632, :names => 'ministerio de industria y comercio, mic, ministerio de industria, ministerio de comercio') 
 
-make_location(:lat => -25.29021, :long => -57.589721, :names => 'iglesia de la recoleta, iglesia la recoleta, cementerio de la recoleta, cementerio la recoleta, la recoleta') 
+make_location(:lat => -25.29021, :long => -57.589721, :names => 'iglesia de la recoleta, iglesia la recoleta, cementerio de la recoleta, cementerio la recoleta, la recoleta, recoleta') 
 
 make_location(:lat => -25.290952, :long => -57.593831, :names => 'embajada del japon, embajada de japon, embajada japonesa, embajada japon') 
 
@@ -62,7 +63,25 @@ make_location(:lat => -25.302029, :long => -57.565793, :names => 'identificacion
 
 make_location(:lat => -25.294832, :long => -57.577228, :names => 'plaza de las americas, plaza americas')
 
-make_location(:lat => -25.292533, :long => -57.601571, :names => 'muruvicha roga')
+make_location(:lat => -25.292533, :long => -57.601571, :names => 'mburuvicha roga')
+
+make_location(:lat => -25.279049, :long => -57.645597, :names => 'hospital militar')
+
+make_location(:lat => -25.29563, :long => -57.576991, :names => 'tigo,	telecel,	casa central tigo')
+
+make_location(:lat => -25.282401, :long => -57.638156, :names => 'supercentro, asuncion super centro, super centro, asuncion supercentro')
+
+make_location(:lat => -25.29361, :long => -57.604452, :names => 'embajada americana, embajada de los estados unidos, embajada eeuu, embajada usa, embajada estados unidos')
+
+make_location(:lat => -25.293585, :long => -57.612526, :names => 'ministerio de defensa, ministerio defensa')
+
+make_location(:lat => -25.289991, :long => -57.617294, :names => 'embajada de brasil, embajada brasilera, embajada brasileña, embajada del brasil')
+
+make_location(:lat => -25.290001, :long => -57.619043, :names => 'teatro tom jobim, tom jobim')
+
+make_location(:lat => -25.289055, :long => -57.625266, :names => 'touring club, touring y automovil club paraguayo, touring club paraguayo')
+
+make_location(:lat => -25.283683, :long => -57.629638, :names => 'estacion central del ferrocarril, estacion del ferrocarril, estacion de ferrocarril, estacion ferrocarril, ferrocarril')
 
 #-------------------------------- ROUTES -------------------------------------------#
 
@@ -77,14 +96,11 @@ end
 
 make_route('51', 'shopping del sol')
 
-make_route('15', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico,  manzana t')
+make_route('15', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico,  manzana t, identificaciones, embajada americana, tigo, plaza de las americas, mburuvicha roga, ministerio de defensa, embajada de brasil, teatro tom jobim, real acceso sur, touring club')
 
+make_route('28', 'hospital militar, tigo, supercentro, embajada americana')
 
-
-
-
-
-
+make_route('49 IDA', '4 mojones, mercado de abasto, multiplaza, una')
 
 
 
