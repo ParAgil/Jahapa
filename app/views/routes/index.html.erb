@@ -1,9 +1,13 @@
 <div class='buses_info'>
-  <h4>Buses que transitan entre ambos puntos:</h4>
+  <% if @routes.size > 0 %>
+    <h4>Buses que transitan entre ambos puntos:</h4>
 
-  <ul class='list'>
-    <% @routes.each do |route| %>
-      <li>Línea <%= route.name %></li>
-    <% end %>
-  </ul>
+    <ul class='list'>
+      <% @routes.each do |route| %>
+        <li>Línea <%= route.name %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <h4>Disculpános. No encontramos buses que transitan entre ambos puntos...</h4>
+  <% end %>
 </div>
