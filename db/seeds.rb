@@ -96,11 +96,11 @@ end
 
 make_route('51', 'shopping del sol')
 
-make_route('15', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico,  manzana t, identificaciones, embajada americana, tigo, plaza de las americas, mburuvicha roga, ministerio de defensa, embajada de brasil, teatro tom jobim, real acceso sur, touring club')
+make_route('15 - 3', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico, manzana t, identificaciones, embajada americana, tigo, plaza de las americas, mburuvicha roga, ministerio de defensa, embajada de brasil, teatro tom jobim, real acceso sur, touring club')
 
 make_route('28', 'hospital militar, tigo, supercentro, embajada americana')
 
-make_route('49 IDA', '4 mojones, mercado de abasto, multiplaza, una')
+make_route('49 VUELTA', '4 mojones, mercado de abasto, multiplaza, una')
 
 
 
