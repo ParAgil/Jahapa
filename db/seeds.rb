@@ -149,7 +149,7 @@ make_route('28', 'hospital militar, tigo, supercentro, embajada americana, vox, 
 
 make_route('49 VUELTA', '4 mojones, mercado de abasto, multiplaza, edesa, una')
 
-make_route('linea 5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo')
+make_route('5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo')
 
 make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu')
 
