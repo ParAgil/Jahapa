@@ -130,6 +130,8 @@ make_location(:lat => -25.309633, :long => -57.531069, :names => 'chaco trading,
 make_location(:lat => -25.300349, :long => -57.52866, :names => 'colegio tecnico san luis, tecnico san luis, colegio san luis')
 
 make_location(:lat => -25.228799, :long => -57.533695, :names => 'expo')
+
+make_location(:lat => -25.334237, :long => -57.536986, :names => 'salemma, supermercado salemma, super salemma, salemma supercenter')
 #------------------------------------------------------------- ROUTES ---------------------------------------------------------------------------#
 
 def make_route( name, locations )
@@ -160,8 +162,6 @@ make_route('29', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa
 make_route('27', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una')
 
 make_route('21 IPVU', 'multiplaza, edesa, medalla milagrosa, dylan, chaco trading, colegio tecnico san luis')
-
-
 
 
 
