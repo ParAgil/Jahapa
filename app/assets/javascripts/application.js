@@ -54,11 +54,21 @@ function initialize(latitude, longitude) {
   })
 }
 
+function yellowFade(element) {
+  var x = '155';
+  function fade() {
+    element.css('background-color', ('rgb(255,255,'+ (x += 4) + ')'))
+    if (x < 255) {
+      setTimeout(fade, 40);
+    }
+  };
+  fade();
+}
 
 $(document).ready(function() {
  $(".buscar").click(function(e){
    e.preventDefault();
-   $('.panel').width(935)
+   $('.panel').animate({width: '935'}, 'slow')
    $.get("/routes", {
      start_location: $('form #start_location').val(), 
      end_location: $('form #end_location').val()
@@ -76,6 +86,8 @@ $(document).ready(function() {
       latitude = $(data).find('td.lat');
       longitude = $(data).find('td.long');
       initialize(latitude, longitude)
+      $('div.list').fadeIn('slow')
+      $('div.map').fadeIn('slow')
    });
   });
 })
