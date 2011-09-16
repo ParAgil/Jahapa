@@ -24,4 +24,14 @@ class Location < ActiveRecord::Base
     name = LocationName.from_name(str)
     name && name.location
   end
+  
+  def self.from_names params
+    if params[:start_location] && params[:end_location]
+      start_location = Location.from_name(params[:start_location])
+      end_location = Location.from_name(params[:end_location])
+      locations = [start_location, end_location]
+    else
+      Location.all
+    end
+  end
 end

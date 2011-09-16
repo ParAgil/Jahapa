@@ -1,14 +1,12 @@
 <h1>Listing locations</h1>
 
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @locations.each do |location| %>
   <tr>
+    <div calss='lat_long'>
+      <td class='lat'><%= location.lat %></td>
+      <td class='long'><%= location.long %></td>
+    </div>
     <td><%= link_to 'Show', location %></td>
     <td><%= link_to 'Edit', edit_location_path(location) %></td>
     <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>

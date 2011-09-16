@@ -109,6 +109,27 @@ describe 'Location' do
       Location.from_name('bar').should == nil
     end
   end
+  
+  describe '.from_names' do
+    before :all do
+      LocationName.destroy_all
+      Location.destroy_all
+    end
+    
+    it 'should find the right ones' do
+      location_1 = Location.create
+      location_2 = Location.create
+      LocationName.create(:name => 'foo', :location => location_1)
+      LocationName.create(:name => 'bar', :location => location_2)
+      Location.from_names('foo, bar').should == [location_1, location_2]
+    end
+    
+    it 'returns nil if one is not found' do
+      location = Location.create
+      LocationName.create(:name => 'foo', :location => location)
+      Location.from_name('mcal, foo').should == nil
+    end
+  end
 end
 
 

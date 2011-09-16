@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<ul class='list'>
+  <li><%= @location.lat %></li>
+  <li><%= @location.long %></li>  
+</ul>
 
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

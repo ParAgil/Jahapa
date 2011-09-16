@@ -9,7 +9,7 @@ describe RoutesController do
   end
 
   describe "GET index" do
-    it " finds particualr raoutes and assigns them as @routes" do
+    it " finds particualr routes and assigns them as @routes" do
       Route.stub(:from_locations) { [mock_route] }
       get :index, {:start_location => 'foo', :end_location => 'bar'} 
       assigns(:routes).should eq([mock_route])

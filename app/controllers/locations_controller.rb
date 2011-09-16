@@ -2,10 +2,10 @@ class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.xml
   def index
-    @locations = Location.all
+    @locations = Location.from_names( params )
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render 'locations/index', :layout => !request.xhr?}
       format.xml  { render :xml => @locations }
     end
   end
@@ -14,7 +14,7 @@ class LocationsController < ApplicationController
   # GET /locations/1.xml
   def show
     @location = Location.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @location }

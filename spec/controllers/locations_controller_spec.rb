@@ -14,6 +14,12 @@ describe LocationsController do
       get :index
       assigns(:locations).should eq([mock_location])
     end
+    
+    it 'assigns specific locations if names param is passed' do
+      Location.stub(:from_names) { [mock_location] }
+      get :index, {:start_location => 'foo', :end_location => 'bar'}
+      assigns(:locations).should eq([mock_location])
+    end    
   end
 
   describe "GET show" do
