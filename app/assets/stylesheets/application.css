@@ -149,12 +149,14 @@ div.list {
   margin-left: 10px;
   width: 38%;
   float: left;
+  display: none;
 }
 
 div.map {
   margin-left: 10px;
   width: 60%;
   float: right;
+  display: none;
 }
 
 div.buses_info {

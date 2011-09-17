@@ -92,5 +92,7 @@ $(document).ready(function() {
       longitude = $(data).find('td.long');
       initialize(latitude, longitude)
    });
+   $('div.list').fadeIn(3000)
+   $('div.map').fadeIn(3000)
   });
 })
