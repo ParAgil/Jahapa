@@ -102,19 +102,34 @@ div.header {
 }
 
 div.footer {
-  background-image :url('footer.png');
+  background-image :url('header.png');
   padding: 0.5%;
   padding-left: 2%;
   color: #fff;
   position: absolute;
   right: 0px;
-  top: 735px;
+  top: 719px;
   width: 100%;
 }
 
-div.footer h5 {
-  margin-left: 80%;
+div.footer .images {
+  margin-left: 88%;
 }
+
+div.footer .paragil img{
+  padding-top: 5px;
+  width: 115px;
+  height: 35px;
+  float: left;
+}
+
+div.footer .rails img{
+  padding-top: 5px;
+  width: 28px;
+  height: 35px;
+  float: right;
+}
+
 
 div.form_and_image {
   margin-top: 5px;
@@ -134,14 +149,12 @@ div.list {
   margin-left: 10px;
   width: 38%;
   float: left;
-  display: none;
 }
 
 div.map {
   margin-left: 10px;
   width: 60%;
   float: right;
-  display: none;
 }
 
 div.buses_info {

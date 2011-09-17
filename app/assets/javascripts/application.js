@@ -54,18 +54,23 @@ function initialize(latitude, longitude) {
   })
 }
 
-function yellowFade(element) {
-  var x = '155';
-  function fade() {
-    element.css('background-color', ('rgb(255,255,'+ (x += 4) + ')'))
-    if (x < 255) {
-      setTimeout(fade, 40);
-    }
+function blueFade(element1, element2) {
+  var blue = '#80B3FF';
+  var white = '#FFFFFF';
+  
+  function fade(color) {
+    element1.animate({backgroundColor: color}, 'slow')
+    element2.animate({backgroundColor: color}, 'slow')
   };
-  fade();
+  
+  fade(blue);
+  fade(white);
+  fade(blue);
+  fade(white)
 }
 
 $(document).ready(function() {
+  blueFade($('form #start_location'), $('form #end_location'))
  $(".buscar").click(function(e){
    e.preventDefault();
    $('.panel').animate({width: '935'}, 'slow')
@@ -86,8 +91,6 @@ $(document).ready(function() {
       latitude = $(data).find('td.lat');
       longitude = $(data).find('td.long');
       initialize(latitude, longitude)
-      $('div.list').fadeIn('slow')
-      $('div.map').fadeIn('slow')
    });
   });
 })

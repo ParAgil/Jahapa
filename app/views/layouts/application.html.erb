@@ -3,7 +3,7 @@
 <head>
   <title>Jahapa</title>
   <%= stylesheet_link_tag :application %>
-  <%= javascript_include_tag "jquery.js", "rails.js", "application.js", "http://maps.googleapis.com/maps/api/js?sensor=false"%>
+  <%= javascript_include_tag "jquery.js", "rails.js", "application.js", "http://maps.googleapis.com/maps/api/js?sensor=false", "jquery-ui.min.js"%>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -15,7 +15,10 @@
     <%= yield %>
   </div>
   <div class='footer'>
-    <h5> <span class='footer'>ParAgil S.R.L.</span> <a href='http://blog.paragil.com'>paragil.com</a> </h5>
+    <div class='images'>
+      <div class='paragil'><%= link_to( image_tag('logo_negro.png'), 'http://blog.paragil.com') %></div>
+      <div class='rails'><%= link_to( image_tag('rails.png'), 'http://www.rubyonrails.org/') %></div>
+    </div>
   </div>
 </body>
 </html>
