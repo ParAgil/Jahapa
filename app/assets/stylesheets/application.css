@@ -7,21 +7,24 @@
 */
 
 html {
-  width: 100%;
-  min-width: 1340px;
-  min-height: 640px;
+  min-width: 100%;
+  height: 100%;
 }
 
 body {
   background-image :url('fondo.png');
   font-family: Verdana;
   margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
 }
 
 div.content {
   height: auto;
   margin: auto;
-  min-height: 40px;
+  min-height: 640px;
+  min-width: 350px;
 }
 
 h5 {
@@ -98,22 +101,25 @@ div.header {
   background-image :url('header.png');
   padding: 0.5%;
   padding-left: 2%;
+  padding-right: 0;
   color: #fff;
 }
 
 div.footer {
   background-image :url('header.png');
-  padding: 0.5%;
-  padding-left: 2%;
   color: #fff;
   position: absolute;
-  right: 0px;
-  top: 719px;
   width: 100%;
+  bottom: 0;
+  height: 60px;
+  
 }
 
 div.footer .images {
   margin-left: 88%;
+  padding: 5px;
+  padding-right: 10px;
+  min-width: 156px;
 }
 
 div.footer .paragil img{
