@@ -43,7 +43,7 @@ make_location(:lat => -25.283215, :long => -57.566922, :names => 'shopping del s
 
 make_location(:lat => -25.316553, :long => -57.571170, :names => 'multiplaza,	shopping multiplaza')
 
-make_location(:lat => -25.333592, :long => -57.520326, :names => 'una,	universidad nacional de asuncion,	facultad')
+make_location(:lat => -25.333592, :long => -57.520326, :names => 'una, universidad nacional de asuncion, facultad, universidad nacional, una san lorenzo')
 
 make_location(:lat => -25.362796, :long => -57.563299, :names => 'coca cola')
 
@@ -51,7 +51,7 @@ make_location(:lat => -25.326436, :long => -57.595988, :names => 'terminal,	term
 
 make_location(:lat => -25.323507, :long => -57.594486, :names => 'ysaty,	colegio ysaty')
 
-make_location(:lat => -25.300613, :long => -57.579964, :names => 'colegio bautista,	bautista,	hospital bautista')
+make_location(:lat => -25.300264, :long => -57.579794, :names => 'colegio bautista,	bautista,	hospital bautista')
 
 make_location(:lat => -25.299827, :long => -57.580114, :names => 'embajada surcorea, embajada corea del sur, embajada surcoreana')
 
@@ -75,7 +75,7 @@ make_location(:lat => -25.29361, :long => -57.604452, :names => 'embajada americ
 
 make_location(:lat => -25.293585, :long => -57.612526, :names => 'ministerio de defensa, ministerio defensa')
 
-make_location(:lat => -25.289991, :long => -57.617294, :names => 'embajada de brasil, embajada brasilera, embajada brasileña, embajada del brasil')
+make_location(:lat => -25.289991, :long => -57.617294, :names => 'embajada de brasil, embajada brasilera, embajada brasileña, embajada del brasil, embajada brasil')
 
 make_location(:lat => -25.290001, :long => -57.619043, :names => 'teatro tom jobim, tom jobim')
 
@@ -132,6 +132,20 @@ make_location(:lat => -25.300349, :long => -57.52866, :names => 'colegio tecnico
 make_location(:lat => -25.228799, :long => -57.533695, :names => 'expo')
 
 make_location(:lat => -25.334237, :long => -57.536986, :names => 'salemma, supermercado salemma, super salemma, salemma supercenter')
+
+make_location(:lat => -25.226218, :long => -57.534564,	:names => 'shopping mariano')
+
+make_location(:lat => -25.334872, :long => -57.526381,	:names => 'snpp, servicio nacional de promocion profesional')
+
+make_location(:lat => -25.333156, :long => -57.537113, :names => 'parroquia domingo sabio, domingo sabio')
+
+make_location(:lat => -25.353809, :long => -57.571794, :names => 'supermercado stock acceso sur, stock villa elisa, supermercado stock villa elisa, super stock villa elisa, super stock acceso sur')
+
+make_location(:lat => -25.348983, :long => -57.574963, :names => 'diefer, supermercado diefer, super diefer')
+
+make_location(:lat => -25.334215, :long => -57.58971, :names => 'comisaria 15, comisaria quince')
+
+make_location(:lat => -25.333971, :long => -57.590552, :names => 'secretaria nacional antidrogas, senad, secretaria antidrogas')
 #------------------------------------------------------------- ROUTES ---------------------------------------------------------------------------#
 
 def make_route( name, locations )
@@ -149,7 +163,7 @@ make_route('15 - 3', '4 mojones, mercado de abasto, municipalidad, shopping vill
 
 make_route('28', 'hospital militar, tigo, supercentro, embajada americana, vox, claro villa morra, shopping villa morra, shopping mcal lopez, shopping del sol, hospital policial, ñu guasu, interpol, comisaria primera, casa rosada')
 
-make_route('49 VUELTA', '4 mojones, mercado de abasto, multiplaza, edesa, una')
+make_route('49 (V. Elisa a Limpio)', '4 mojones, mercado de abasto, multiplaza, edesa, una, domingo sabio, medalla milagrosa')
 
 make_route('5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo')
 
@@ -157,9 +171,9 @@ make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu')
 
 make_route('1 B', 'frigorifico guarani, cementerio del este, jardin botanico')
 
-make_route('29', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una')
+make_route('29', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una, domingo sabio')
 
-make_route('27', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una')
+make_route('27', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una, domingo sabio')
 
 make_route('21 IPVU', 'multiplaza, edesa, medalla milagrosa, dylan, chaco trading, colegio tecnico san luis')
 
