@@ -6,31 +6,55 @@
  *= require_tree . 
 */
 
-html {
-  min-width: 100%;
-  height: 100%;
-}
-
 body {
-  background-image :url('fondo.png');
+  background-color: #8899FF;
   font-family: Verdana;
   margin: 0;
-  min-height: 100%;
-  min-width: 100%;
-  position: relative;
+}
+
+div.header {
+  padding: 0.5%;
+  padding-left: 2%;
+  padding-right: 0;
+  color: #fff;
 }
 
 div.content {
-  height: auto;
-  margin: auto;
-  min-height: 640px;
+  background-color: #BBCCFF;
+  padding-top: 15px;
+  padding-left: 125px;
+  min-height: 625px;
   min-width: 350px;
 }
 
+div.footer {
+  padding: 15px 20px;
+  height: 40px;
+}
+
+div.footer .images {
+  min-width: 156px;
+}
+
+div.footer .paragil img{
+  padding-top: 5px;
+  width: 115px;
+  height: 35px;
+  float: left;
+}
+
+div.footer .rails img{
+  padding-top: 5px;
+  width: 28px;
+  height: 35px;
+  float: right;
+}
+
 h5 {
-  margin: 0;
   display: inline;
   font-size: 18px;
+  margin: 0;
+  padding-left: 75px;
 }
 
 h4 {
@@ -48,28 +72,17 @@ div.header img{
   display: inline;
   width: 160px;
   height: 25px;
-  margin: 0;
-  margin-right: 15px;
-}
-
-span.footer {
-  color: #000080;
-  font-size :14px;
-  margin: 8px;
 }
 
 div.panel {
-  background-color :#fff;
+  background-color :#FFF;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  margin-right :920px ;
-  margin-left :213px ;
-  margin-top: 6px;
-  margin-bottom: 28;
   padding: 5px 30px;
   padding-bottom: 40px;
   height: 515px;
-  min-width: 228px;
+  width: 255px;
+  min-width: 255px;
   -moz-box-shadow: 10px 10px 5px #888;
   -webkit-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888;
@@ -96,46 +109,6 @@ ul.list {
   -webkit-box-shadow: 10px 10px 5px #888;
   box-shadow: 10px 10px 5px #888; 
 }
-
-div.header {
-  background-image :url('header.png');
-  padding: 0.5%;
-  padding-left: 2%;
-  padding-right: 0;
-  color: #fff;
-}
-
-div.footer {
-  background-image :url('header.png');
-  color: #fff;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 60px;
-  
-}
-
-div.footer .images {
-  margin-left: 88%;
-  padding: 5px;
-  padding-right: 10px;
-  min-width: 156px;
-}
-
-div.footer .paragil img{
-  padding-top: 5px;
-  width: 115px;
-  height: 35px;
-  float: left;
-}
-
-div.footer .rails img{
-  padding-top: 5px;
-  width: 28px;
-  height: 35px;
-  float: right;
-}
-
 
 div.form_and_image {
   margin-top: 5px;
