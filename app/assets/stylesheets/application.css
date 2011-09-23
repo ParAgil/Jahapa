@@ -75,7 +75,7 @@ div.header img{
 }
 
 div.panel {
-  background-color :#FFF;
+  background-image: url('fondo.jpg') ;
   -moz-border-radius: 30px;
   border-radius: 30px;
   padding: 5px 30px;
@@ -112,15 +112,13 @@ ul.list {
 
 div.form_and_image {
   margin-top: 5px;
-  margin-right: 15px;
   width: 25%;
   min-width: 25%;
   float: left;
 }
 
 div.list_and_map {
-  margin-left: 10px;
-  width: 72%;
+  width: 75%;
   float: right;
 }
 

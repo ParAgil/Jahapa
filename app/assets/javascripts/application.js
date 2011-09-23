@@ -73,7 +73,7 @@ $(document).ready(function() {
   blueFade($('form #start_location'), $('form #end_location'))
  $(".buscar").click(function(e){
    e.preventDefault();
-   $('.panel').animate({width: '935'}, 'slow')
+   $('.panel').animate({width: '1120'}, 'slow')
    $.get("/routes", {
      start_location: $('form #start_location').val(), 
      end_location: $('form #end_location').val()
