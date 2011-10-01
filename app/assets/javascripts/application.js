@@ -28,8 +28,8 @@ function initialize(latitude, longitude) {
   long_2 = (parseFloat(longitude.slice(1).text()))
   dlat = Math.pow((lat_2 - lat_1), 2)
   dlong = Math.pow((long_2 - long_1), 2)
-  distance = Math.round((Math.sqrt(dlat + dlong) * 100) + 0.15)
-  calc_zoom = Math.round(16 * Math.pow(Math.E, (-0.0465 * distance)))
+  distance = Math.round((Math.sqrt(dlat + dlong) * 100) - 0.5)
+  calc_zoom = Math.round(16 * Math.pow(Math.E, (-0.05 * distance)))
   
   var latlng1 = new google.maps.LatLng(lat_1, long_1);
   var latlng2 = new google.maps.LatLng(lat_2, long_2);
@@ -73,7 +73,8 @@ $(document).ready(function() {
   blueFade($('form #start_location'), $('form #end_location'))
  $(".buscar").click(function(e){
    e.preventDefault();
-   $('.panel').animate({width: '1120'}, 'slow')
+   $('.panel').animate({width: '1100'}, 'slow')
+   $('div.form-inputs span').css('display', 'none')
    $.get("/routes", {
      start_location: $('form #start_location').val(), 
      end_location: $('form #end_location').val()

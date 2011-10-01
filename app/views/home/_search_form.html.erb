@@ -1,14 +1,19 @@
 <%= form_tag({:controller => "routes", :action => "index"}, :method => "get") do %>
-  <div class='input'>
-    <%= label_tag(:start_location, "Subir cerca de:") %>
-    <p class='tip'>ej: shopping mcal lopez</p>
-    <%= text_field_tag(:start_location) %>
+  <div class='form-inputs'>
+    <span>
+      Ingrese puntos de interes, por ejemplo: 'UNA' o 'Embajada del Brasil'.
+    </span>
+    <div class='input'>
+      <%= label_tag(:start_location, "Subir cerca de:") %>
+      <p class='tip'>ej: shopping mcal lopez</p>
+      <%= text_field_tag(:start_location) %>
+    </div>
+    <div class='input'>
+      <%= label_tag(:end_location, "Bajar cerca de:") %>
+      <p class='tip'>ej: mercado de abasto</p>
+        <%= text_field_tag(:end_location) %>
+    </div>
+    <%= submit_tag('Buscar', :class => 'button buscar') %>
   </div>
-  <div class='input'>
-    <%= label_tag(:end_location, "Bajar cerca de:") %>
-    <p class='tip'>ej: mercado de abasto</p>
-      <%= text_field_tag(:end_location) %>
-  </div>
-  <%= submit_tag('Buscar', :class => 'button buscar') %>
 <% end %>
 
