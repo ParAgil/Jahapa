@@ -245,13 +245,26 @@ make_location(:lat => -25.298329, :long => -57.639766, :names => 'club nacional'
 
 make_location(:lat => -25.284096, :long => -57.63343, :names => 'embajada de españa, embajada españa, embajada española, embajada espanha, embajada espanhola, embajada de espanha')
 
+make_location(:lat => -25.212838, :long => -57.528856, :names => 'supermercado españa (transchaco), super españa transchaco, super españa mariano, super españa mariano roque alonso, supermercado españa mariano roque alonso')
+
+make_location(:lat => -25.292678, :long => -57.559503, :names => 'superseis denis roa')
+
+make_location(:lat => -25.277191, :long => -57.577178, :names => 'banco central, bcp, banco central del paraguay')
+
+make_location(:lat => -25.297320, :long => -57.578541, :names => 'supermercado real villamorra, super real villamorra, real villamorra')
+
+
 #------------------------------------------------------------- ROUTES ---------------------------------------------------------------------------#
 
 def make_route( name, locations )
   locations = locations.is_a?(Array) ? locations : locations.split(',')
   route = Route.create(:name => name)
   locations.each do |loc_name|
-    route.locations << Location.from_name( loc_name )
+    if Location.from_name( loc_name )
+      route.locations << Location.from_name( loc_name )
+    else
+      raise "location #{loc_name} not found"
+    end
   end
   route
 end
@@ -264,11 +277,11 @@ make_route('28', 'hospital militar, tigo, supercentro, embajada americana, vox, 
 
 make_route('49 (V. Elisa a Limpio)', '4 mojones, mercado de abasto, multiplaza, edesa, una, domingo sabio, medalla milagrosa')
 
-make_route('5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo, supermercado españa (transchaco), shopping mariano, cooperativa santisima trinidad (artigas), cooperativa medalla milagrosa (loma pyta)')
+make_route('5 (La Chaqueña)', 'supermercado españa (transchaco), facultad de medicina, universidad autonoma, expo, shopping mariano')
 
-make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu, cooperativa san cristobal (santa teresa)')
+make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu')
 
-make_route('1 B', 'frigorifico guarani, cementerio del este, jardin botanico, superseis denis roa, banco central, cooperativa san cristobal (santa teresa), cooperativa santisima trinidad (artigas)')
+make_route('1 B', 'frigorifico guarani, cementerio del este, jardin botanico, superseis denis roa, bcp')
 
 make_route('29', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una, domingo sabio')
 
@@ -278,7 +291,7 @@ make_route('21 IPVU', 'multiplaza, edesa, medalla milagrosa, dylan, chaco tradin
 
 make_route('49 (Limpio a V. Elisa)', 'una, snpp, lasca, salemma, parroquia domingo sabio, real fernando, supermercado pueblo, colegio san nicolas')
 
-make_route('18 Ñemby-Asunción', 'coca cola, supermercado stock acceso sur, diefer, real acceso sur, 4 mojones, comisaria 15, secretaria nacional antidrogas, casa central joseph i, terminal, ysaty, supermercado stock, republica argentina, direccion del registro civil, superseis los laureles, heladeria sugar, radio venus, colegio bautista, embajada surcorea, supermercado real villamorra, heladeria amandau, fundacion moises bertoni, tigo, vox, plaza de las americas, cooperativa universitaria, asociacion medica ips, ccpa villa morra, libreria el lector')
+make_route('18 Ñemby-Asunción', 'coca cola, supermercado stock acceso sur, diefer, real acceso sur, 4 mojones, comisaria 15, secretaria nacional antidrogas, casa central joseph i, terminal, ysaty, supermercado stock republica argentina, direccion del registro civil, superseis los laureles, heladeria sugar, radio venus, colegio bautista, embajada surcorea, supermercado real villamorra, heladeria amandau, fundacion moises bertoni, tigo, vox, plaza de las americas, cooperativa universitaria, asociacion medica ips, ccpa villa morra, libreria el lector')
 
 make_route('48', '4 mojones, comisaria 15, secretaria nacional antidrogas, casa central joseph i, terminal, ysaty, supermercado stock republica argentina, direccion del registro civil, club tembetary, supermercado gran via, hospital san lucas, esaap, supermercado unicompra, club guarani, colegio nacional de la capital, galeria san miguel, touring club, colegio carlos antonio lopez, ccpa central, supermercado españa (mcal lopez), facultad de odontologia una, universidad del cono sur de las americas, instituto cultural paraguayo aleman, anglo central, cruz roja, parque general caballero, oficina central del correo, subsistencia del ejercito, club libertad, centro medico la costa, intn, jardin botanico')
 
