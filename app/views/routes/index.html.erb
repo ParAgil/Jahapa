@@ -1,13 +1,19 @@
 <div class='buses_info'>
   <% if @routes.size > 0 %>
-    <h4>Buses que transitan entre ambos puntos:</h4>
-
+    <% if request.xhr? %>
+      <h4>Buses que transitan entre ambos puntos:</h4>
+    <% else %>
+      <h4>Lineas:</h4>
+    <% end %>
     <ul class='list'>
       <% @routes.each do |route| %>
         <li>Línea <%= route.name %></li>
       <% end %>
     </ul>
   <% else %>
-    <h4>Disculpanos. No encontramos buses que transitan entre ambos puntos...</h4>
+    <h4>
+      Disculpanos. No encontramos buses que transitan entre ambos puntos... 
+      Revisa nuestras <%= link_to 'LINEAS', '/routes' %> disponibles actualmente.
+    </h4>
   <% end %>
 </div>

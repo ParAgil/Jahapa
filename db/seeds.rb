@@ -146,6 +146,105 @@ make_location(:lat => -25.348983, :long => -57.574963, :names => 'diefer, superm
 make_location(:lat => -25.334215, :long => -57.58971, :names => 'comisaria 15, comisaria quince')
 
 make_location(:lat => -25.333971, :long => -57.590552, :names => 'secretaria nacional antidrogas, senad, secretaria antidrogas')
+
+make_location(:lat => -25.3279, :long => -57.595348, :names => 'casa central joseph I, joseph terminal, joseph coiffure terminal, peluqueria joseph terminal')
+
+make_location(:lat => -25.321146, :long => -57.594356, :names => 'supermercado stock republica argentina, stock rca argentina, stock republica argentina, super stock rca argentina, super stock republica argentina')
+
+make_location(:lat => -25.320025, :long => -57.591633, :names => 'direccion del registro civil, registro civil terminal, registro civil, direccion registro civil')
+
+make_location(:lat => -25.305216, :long => -57.583794, :names => 'superseis los laureles, superseis laureles')
+
+make_location(:lat => -25.303887, :long => -57.582626, :names => 'heladeria sugar, sugar')
+
+make_location(:lat => -25.30104, :long => -57.580878, :names => 'radio venus, venus')
+
+make_location(:lat => -25.297155, :long => -57.578579, :names => 'supermercado real villa morra, super real villa morra, real villa morra')
+
+make_location(:lat => -25.29684, :long => -57.57822, :names => 'heladeria amandau, amandau')
+
+make_location(:lat => -25.296658, :long => -57.576997, :names => 'fundacion moises bertoni, moises bertoni')
+
+make_location(:lat => -25.293239, :long => -57.576165, :names => 'cooperativa universitaria')
+
+make_location(:lat => -25.291587, :long => -57.574181, :names => 'asociacion medica ips, asociacion medica del ips, aso medica ips, aso medica del ips')
+
+make_location(:lat => -25.290428, :long => -57.573119, :names => 'ccpa villa morra')
+
+make_location(:lat => -25.287445, :long => -57.572013, :names => 'libreria el lector, libreria lector, el lector')
+
+make_location(:lat => -25.309726, :long => -57.591422, :names => 'club tembetary, tembetary')
+
+make_location(:lat => -25.30814, :long => -57.596668, :names => 'supermercado gran via, super gran via, gran via')
+
+make_location(:lat => -25.307936, :long => -57.59898, :names => 'hospital san lucas')
+
+make_location(:lat => -25.306263, :long => -57.604243, :names => 'esaap')
+
+make_location(:lat => -25.304716, :long => -57.607301, :names => 'supermercado unicompra, super unicompra')
+
+make_location(:lat => -25.303319, :long => -57.61591, :names => 'club guarani, guarani')
+
+make_location(:lat => -25.302053, :long => -57.617504, :names => 'colegio nacional de la capital, nacional de la capital, cnc')
+
+make_location(:lat => -25.298925, :long => -57.621663, :names => 'galeria san miguel')
+
+make_location(:lat => -25.286916, :long => -57.623139, :names => 'colegio carlos antonio lopez, colegio carlos a lopez, colegio antonio lopez')
+
+make_location(:lat => -25.285083, :long => -57.623426, :names => 'ccpa central, centro cultural paraguayo americano, ccpa')
+
+make_location(:lat => -25.285459, :long => -57.621234, :names => 'supermercado españa (mcal lopez), supermercado españa, super españa')
+
+make_location(:lat => -25.285308, :long => -57.621561, :names => 'facultad de odontologia una, facultad de odontologia, odontologia una, facultad odontologia')
+
+make_location(:lat => -25.284942, :long => -57.621411, :names => 'universidad del cono sur de las americas, ucsa, universidad del cono sur')
+
+make_location(:lat => -25.284127, :long => -57.620784, :names => 'instituto cultural paraguayo aleman, icpa, icpa-gz, icpagz, cultural paraguayo aleman, goethe zentrum')
+
+make_location(:lat => -25.28396, :long => -57.619622, :names => 'anglo central, anglo centro, anglo 1')
+
+make_location(:lat => -25.283667, :long => -57.622476, :names => 'cruz roja, cruz roja paraguaya')
+
+make_location(:lat => -25.281702, :long => -57.619902, :names => 'parque general caballero, parque gral caballero, parque caballero')
+
+make_location(:lat => -25.280611, :long => -57.616959, :names => 'oficina central del correo, oficina central de correo, central de correos, central del correo')
+
+make_location(:lat => -25.277569, :long => -57.613555, :names => 'subsistencia del ejercito, subsistencia ejercito')
+
+make_location(:lat => -25.276919, :long => -57.611351, :names => 'club libertad, libertad')
+
+make_location(:lat => -25.273213, :long => -57.607145, :names => 'centro medico la costa, la costa, hospital la costa, unida')
+
+make_location(:lat => -25.254589, :long => -57.583254, :names => 'intn, instituto nacional de tecnologia normalizacion y metrologia')
+
+make_location(:lat => -25.252051, :long => -57.57703, :names => 'jardin botanico, zoologico, botanico')
+
+make_location(:lat => -25.287576, :long => -57.627782, :names => 'crowne plaza asuncion, hotel crowne plaza asuncion, hotel crowne, crowne hotel, crowne plaza, hotel crowne plaza')
+
+make_location(:lat => -25.285369, :long => -57.635139, :names => 'absoluto rock live stage, absoluto rock live, absoluto rock')
+
+make_location(:lat => -25.284101, :long => -57.63515, :names => 'hotel guarani, guarani hotel')
+
+make_location(:lat => -25.284101, :long => -57.63515, :names => 'plaza de la democracia, plaza democracia')
+
+make_location(:lat => -25.28372, :long => -57.634275, :names => 'banco nacional de fomento, bnf')
+
+make_location(:lat => -25.28282, :long => -57.637003, :names => 'ministerio de obras publicas y comunicaciones, mopc, ministerio de obras publicas, ministerio de comunicaciones, obras publicas y comunicaciones')
+
+make_location(:lat => -25.282342, :long => -57.638253, :names => 'asuncion super centro, super centro')
+
+make_location(:lat => -25.286921, :long => -57.646649, :names => 'colegio cristo rey, parroquia cristo rey, iglesia cristo rey, cristo rey')
+
+make_location(:lat => -25.287569, :long => -57.648029, :names => "mc donalds sajonia, mc donald's sajonia, mac donald sajonia")
+
+make_location(:lat => -25.294347, :long => -57.640018, :names => 'radio nacional del paraguay, radio nacional paraguay, radio nacional')
+
+make_location(:lat => -25.298115, :long => -57.636944, :names => 'club cerro porteño, cerro porteño, estadio cerro porteño')
+
+make_location(:lat => -25.298329, :long => -57.639766, :names => 'club nacional')
+
+make_location(:lat => -25.284096, :long => -57.63343, :names => 'embajada de españa, embajada españa, embajada española, embajada espanha, embajada espanhola, embajada de espanha')
+
 #------------------------------------------------------------- ROUTES ---------------------------------------------------------------------------#
 
 def make_route( name, locations )
@@ -159,17 +258,17 @@ end
 
 make_route('51', 'shopping del sol')
 
-make_route('15 - 3', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico, manzana t, identificaciones, embajada americana, tigo, plaza de las americas, mburuvicha roga, ministerio de defensa, embajada de brasil, teatro tom jobim, real acceso sur, touring club')
+make_route('15-3 (Ñemby a Asunción)', '4 mojones, mercado de abasto, municipalidad, shopping villa morra,  shopping mariscal lopez, ministerio de industria y comercio,  iglesia de la recoleta,  embajada del japon, policlinico, shopping britanico, manzana t, identificaciones, embajada americana, tigo, plaza de las americas, mburuvicha roga, ministerio de defensa, embajada de brasil, teatro tom jobim, real acceso sur, touring club, crowne plaza asuncion, absoluto rock live stage, hotel guarani, plaza de la democracia, banco nacional de fomento, ministerio de obras publicas y comunicaciones, asuncion super centro, colegio cristo rey, mc donalds sajonia, radio nacional del paraguay, club cerro porteño, club nacional')
 
 make_route('28', 'hospital militar, tigo, supercentro, embajada americana, vox, claro villa morra, shopping villa morra, shopping mcal lopez, shopping del sol, hospital policial, ñu guasu, interpol, comisaria primera, casa rosada')
 
 make_route('49 (V. Elisa a Limpio)', '4 mojones, mercado de abasto, multiplaza, edesa, una, domingo sabio, medalla milagrosa')
 
-make_route('5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo')
+make_route('5 (La Chaqueña)', 'facultad de medicina, universidad autonoma, expo, supermercado españa (transchaco), shopping mariano, cooperativa santisima trinidad (artigas), cooperativa medalla milagrosa (loma pyta)')
 
-make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu')
+make_route('1 A', 'frigorifico guarani, cementerio del este, ñu guazu, cooperativa san cristobal (santa teresa)')
 
-make_route('1 B', 'frigorifico guarani, cementerio del este, jardin botanico')
+make_route('1 B', 'frigorifico guarani, cementerio del este, jardin botanico, superseis denis roa, banco central, cooperativa san cristobal (santa teresa), cooperativa santisima trinidad (artigas)')
 
 make_route('29', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa, medalla milagrosa, municipalidad fernando, supermercado pueblo, colegio san nicolas, real fernando, lasca, una, domingo sabio')
 
@@ -177,8 +276,10 @@ make_route('27', 'jockey club paraguayo, hipermercado luisito, multiplaza, edesa
 
 make_route('21 IPVU', 'multiplaza, edesa, medalla milagrosa, dylan, chaco trading, colegio tecnico san luis')
 
+make_route('49 (Limpio a V. Elisa)', 'una, snpp, lasca, salemma, parroquia domingo sabio, real fernando, supermercado pueblo, colegio san nicolas')
 
+make_route('18 Ñemby-Asunción', 'coca cola, supermercado stock acceso sur, diefer, real acceso sur, 4 mojones, comisaria 15, secretaria nacional antidrogas, casa central joseph i, terminal, ysaty, supermercado stock, republica argentina, direccion del registro civil, superseis los laureles, heladeria sugar, radio venus, colegio bautista, embajada surcorea, supermercado real villamorra, heladeria amandau, fundacion moises bertoni, tigo, vox, plaza de las americas, cooperativa universitaria, asociacion medica ips, ccpa villa morra, libreria el lector')
 
+make_route('48', '4 mojones, comisaria 15, secretaria nacional antidrogas, casa central joseph i, terminal, ysaty, supermercado stock republica argentina, direccion del registro civil, club tembetary, supermercado gran via, hospital san lucas, esaap, supermercado unicompra, club guarani, colegio nacional de la capital, galeria san miguel, touring club, colegio carlos antonio lopez, ccpa central, supermercado españa (mcal lopez), facultad de odontologia una, universidad del cono sur de las americas, instituto cultural paraguayo aleman, anglo central, cruz roja, parque general caballero, oficina central del correo, subsistencia del ejercito, club libertad, centro medico la costa, intn, jardin botanico')
 
-
-
+make_route('56', 'una, shopping mariscal lopez')
