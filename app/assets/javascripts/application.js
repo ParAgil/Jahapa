@@ -29,7 +29,8 @@ function initialize(latitude, longitude) {
   dlat = Math.pow((lat_2 - lat_1), 2)
   dlong = Math.pow((long_2 - long_1), 2)
   distance = Math.round(Math.sqrt(dlat + dlong) * 100)
-  calc_zoom = Math.round(16 * Math.pow(Math.E, (-0.028 * distance)))
+  calc_zoom = Math.round(((Math.pow(Math.E, ((-1 * distance)/8)) + 14) + ((-1/3) * distance + 15 ))/2 - 0.2)
+    
   var latlng1 = new google.maps.LatLng(lat_1, long_1);
   var latlng2 = new google.maps.LatLng(lat_2, long_2);
   var center_latlng = new google.maps.LatLng(center_lat, center_long);
