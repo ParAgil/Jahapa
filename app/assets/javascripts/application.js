@@ -26,16 +26,32 @@ function initialize(latitude, longitude) {
   lat_2 = (parseFloat(latitude.slice(1).text()))
   long_1 = (parseFloat(longitude.slice(0,1).text()))
   long_2 = (parseFloat(longitude.slice(1).text()))
+  
   dlat = Math.pow((lat_2 - lat_1), 2)
   dlong = Math.pow((long_2 - long_1), 2)
   distance = Math.round(Math.sqrt(dlat + dlong) * 100)
-  calc_zoom = Math.round(((Math.pow(Math.E, ((-1 * distance)/8)) + 14) + ((-1/3) * distance + 15 ))/2 - 0.2)
-    
+  
+  if (distance<2) {
+      zoom = 15
+    }
+  else if (distance>2 && distance<4) {
+      zoom = 14
+    }
+  else if (distance=4 || (distance>4 && distance<8)) {
+      zoom = 13
+    }
+  else if (distance=8 || (distance>8 && distance<15)) {
+      zoom = 12
+    }
+  else if (distance=15 || distance>15) {
+    zoom = 11
+  }
+  
   var latlng1 = new google.maps.LatLng(lat_1, long_1);
   var latlng2 = new google.maps.LatLng(lat_2, long_2);
   var center_latlng = new google.maps.LatLng(center_lat, center_long);
   var myOptions = {
-    zoom: calc_zoom,
+    zoom: zoom,
     center: center_latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
