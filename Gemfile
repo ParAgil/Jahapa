@@ -5,7 +5,6 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'jquery-rails'
 gem 'thin'
 
@@ -43,6 +42,7 @@ group :production do
 end
 
 group :test, :development do
+  gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rspec-rails'
   gem 'open_gem'
 end
