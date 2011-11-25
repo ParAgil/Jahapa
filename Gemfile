@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'jquery-rails'
+gem 'thin'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,6 +30,7 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
 gem 'sprockets'
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-rails', "~> 3.1.0.rc"
@@ -36,11 +38,11 @@ gem 'uglifier'
 gem 'execjs'
 
 group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
-  gem "pg", "~> 0.11.0"
+  gem 'pg'
+  gem 'heroku'
 end
 
 group :test, :development do
-  gem "rspec-rails"
+  gem 'rspec-rails'
   gem 'open_gem'
 end
