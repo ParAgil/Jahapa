@@ -6,4 +6,7 @@ class HomeController < ApplicationController
       @routes = []
     end
   end
+  
+  def facebook
+  end
 end
