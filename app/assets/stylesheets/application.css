@@ -5,12 +5,19 @@
  *= require_self
  *= require_tree . 
 */
-
 body {
   background-color: #364F92;
   font-family: Verdana;
   margin: 0;
   
+}
+
+body.facebook {
+  background-image: url('fondo.jpg');
+  font-family: Verdana;
+  margin: 0;
+  width: 760px;
+  height: 800px;
 }
 
 div.header {
@@ -27,6 +34,11 @@ div.content {
   padding-left: 125px;
   min-height: 625px;
   min-width: 1200px;
+}
+
+div.facebook_content {
+  max-width: 760px;
+  max-height: 800px;
 }
 
 div.footer {

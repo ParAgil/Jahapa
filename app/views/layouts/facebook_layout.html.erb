@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jahapa</title>
+  <%= stylesheet_link_tag :application %>
+  <%= javascript_include_tag "jquery.js", "rails.js", "application.js", "http://maps.googleapis.com/maps/api/js?sensor=false", "jquery-ui.min.js"%>
+  <%= csrf_meta_tag %>
+</head>
+<body class='facebook'>
+  <div class='facebook_content'>
+    <%= yield %>
+  </div>
+</body>
+</html>

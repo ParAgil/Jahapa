@@ -7,22 +7,18 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <% if request.path == '/facebook' %>
+  <div class='header'>
+      <%= image_tag('logo_header.png') %>
+      <h5> Buscador de buses del área de Gran Asunción </h5> 
+  </div>
+  <div class='content'>
     <%= yield %>
-  <% else %>
-    <div class='header'>
-        <%= image_tag('logo_header.png') %>
-        <h5> Buscador de buses del área de Gran Asunción </h5> 
+  </div>
+  <div class='footer'>
+    <div class='images'>
+      <div class='paragil'><%= link_to( image_tag('logo_negro.png'), 'http://blog.paragil.com') %></div>
+      <div class='rails'><%= link_to( image_tag('rails.png'), 'http://www.rubyonrails.org/') %></div>
     </div>
-    <div class='content'>
-      <%= yield %>
-    </div>
-    <div class='footer'>
-      <div class='images'>
-        <div class='paragil'><%= link_to( image_tag('logo_negro.png'), 'http://blog.paragil.com') %></div>
-        <div class='rails'><%= link_to( image_tag('rails.png'), 'http://www.rubyonrails.org/') %></div>
-      </div>
-    </div>
-  <% end %>
+  </div>
 </body>
 </html>
