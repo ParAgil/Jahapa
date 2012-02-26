@@ -7,7 +7,7 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-  <% if request.url == 'http://localhost:3000/facebook' %>
+  <% if request.path == '/facebook' %>
     <%= yield %>
   <% else %>
     <div class='header'>
