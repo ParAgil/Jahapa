@@ -13,7 +13,7 @@
       <p class='tip'>ej: mercado de abasto</p>
         <%= text_field_tag(:end_location) %>
     </div>
-    <%= submit_tag('Buscar', :class => 'button buscar') %>
+    <%= submit_tag('Buscar', :class => "#{request.path == '/facebook' ? 'button buscar_facebook' : 'button buscar' }") %>
   </div>
 <% end %>
 

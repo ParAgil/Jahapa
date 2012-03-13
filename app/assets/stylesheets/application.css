@@ -12,14 +12,6 @@ body {
   
 }
 
-body.facebook {
-  background-image: url('fondo.jpg');
-  font-family: Verdana;
-  margin: 0;
-  width: 760px;
-  height: 800px;
-}
-
 div.header {
   padding: 0.5%;
   padding-left: 2%;
@@ -34,11 +26,6 @@ div.content {
   padding-left: 125px;
   min-height: 625px;
   min-width: 1200px;
-}
-
-div.facebook_content {
-  max-width: 760px;
-  max-height: 800px;
 }
 
 div.footer {
@@ -111,6 +98,7 @@ div.image {
 div.image img {
   width: 220px;
 }
+
 
 ul.list {
   width: 235px;

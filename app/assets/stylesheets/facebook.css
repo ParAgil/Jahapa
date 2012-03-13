@@ -1,0 +1,118 @@
+body.facebook {
+  background-image: url('fondo.jpg');
+  font-family: Verdana;
+  margin: 0;
+  width: 700px;
+  height: 700px;
+}
+
+div.facebook_content {
+  max-width: 700px;
+  max-height: 700px;
+}
+
+div.image {
+  margin: 5px;
+  margin-left: 5px;
+  float: left;
+}
+
+div.form_and_image {
+  margin-top: 5px;
+  width: 25%;
+  min-width: 25%;
+  float: left;
+}
+
+
+div.list {
+  width: 38%;
+  display: none;
+}
+
+div.map {
+  margin-left: 10px;
+  width: 460px;
+  float: right;
+  margin: 20px;
+  border: solid white 1px;
+}
+
+div.buses_info {
+  padding-left: 10px;
+}
+
+div.form-inputs span {
+  display: none;
+}
+
+div.form-inputs:hover {
+  position: relative;
+}
+
+p.tip {
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 0.5px;
+}
+
+div.input {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+div.facebook_image img {
+  width: 145px;
+}
+
+div.facebook_form {
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  width: 155px;
+  padding: 15px;
+  background-color :white;
+  border: solid #BBB;
+  border-width: 1px;
+}
+
+div.facebook_form input {
+  border: solid #BBB;
+  border-width: 1px;
+  width: 155px;
+  height: 32px;
+}
+
+div.facebook_form form div.form_inputs div.input {
+  margin-left: -5;
+}
+
+div.facebook_form input.button {
+  color: white;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding-bottom: 4px;
+  height: 30px;
+  width: 75px;
+  background-color: #364F92;
+  background-image: none;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+div.facebook_list {
+  padding-top: 500px;
+}
+
+ul.list {
+  background-color: white;
+  border: solid #BBB;
+  border-width: 1px;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  box-shadow: none;  
+  width: 400px;
+  padding: 10px;
+  padding-left: 40px;
+}

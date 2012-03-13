@@ -9,6 +9,7 @@
 
 function initialize(latitude, longitude) {
   $('div.list_and_map').height(545)
+  $('div.map').height(460)
   var center_lat;
   var center_long;
   var lat_1;
@@ -112,4 +113,29 @@ $(document).ready(function() {
    $('div.list').fadeIn(3000)
    $('div.map').fadeIn(3000)
   });
+  
+  $(".buscar_facebook").click(function(e){
+    e.preventDefault();
+    $('div.form-inputs span').css('display', 'none')
+    $.get("/routes", {
+      start_location: $('form #start_location').val(), 
+      end_location: $('form #end_location').val()
+      }, function(data) {
+       var info;
+       info = $(data, 'div.buses_info');
+       $('div.facebook_list').html(info)
+    });
+    $.get("/locations", {
+      start_location: $('form #start_location').val(), 
+      end_location: $('form #end_location').val() 
+      }, function(data) {
+       var latitude;
+       var longitude;
+       latitude = $(data).find('td.lat');
+       longitude = $(data).find('td.long');
+       initialize(latitude, longitude)
+    });
+    $('div.facebook_list').fadeIn()
+    $('div.map').fadeIn(3000)
+   });
 })

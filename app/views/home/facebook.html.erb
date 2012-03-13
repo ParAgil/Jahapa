@@ -1,18 +1,16 @@
-<div class='panel'>
+<div class='form_and_map'>
   <div class='form_and_image'>
-    <div class='image'>
+  <div class="facebook_form">
+    <div class='facebook_image'>
       <%= image_tag('logo.png') %>
     </div>
     <%= render 'search_form' %>
   </div>
-  
-  <div class='list_and_map'>
-    <div class='list'>
-      <% if @routes.size > 0 %>
-        <%= render :template => 'routes/index' %>
-      <% end %>
-    </div>
-    <div class='map' id='map'>
-    </div>
-  </div>
+</div>
+  <div class='map' id='map'></div>
+</div>
+<div class='facebook_list'>
+  <% if @routes.size > 0 %>
+    <%= render :template => 'routes/index' %>
+  <% end %>
 </div>
