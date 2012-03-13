@@ -19,6 +19,7 @@ div.image {
 
 div.form_and_image {
   margin-top: 5px;
+  margin-left: 10px;
   width: 25%;
   min-width: 25%;
   float: left;
